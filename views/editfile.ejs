@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 style="text-align: center; color: red;">Edit List</h1><br><br>
+    <form action="/api/user/update" method="post" style="text-align: center;">
+        Id:<input type="text" name="id" value="<%= checkId._id%>" 
+        style=background-color:aqua;text-align:center;font-style:oblique ; ;  /><br><br>
+        Name:<input type="text" name="name" value="<%= checkId.name%>"
+        style=background-color:aqua;text-align:center;font-style:initial ;/><br> <br>
+        Email:<input type="text" name="email" value="<%= checkId.email%>"
+        style="background-color:aqua ;text-align: center;font-style: initial;"/><br> <br>
+        Password:<input type="text" name="password" value="<%= checkId.password%>"
+        style="background-color:aqua ;text-align: center;font-style: initial;"/><br> <br>
+        Age:<input type="number" name="age" value="<%= checkId.age%>" 
+        style="background-color:aqua ;text-align: center;font-style: initial;"/><br> <br>
+        <button type="submit" style=background-color:aqua;color:black ;">submit</button>
+
+    </form>
+</body>
+</html>>
